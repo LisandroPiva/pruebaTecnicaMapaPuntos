@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapa - Recursos</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    header {
+      background: #111; color: #fff;
+      padding: 10px 14px;
+      display: flex; gap: 10px; align-items: center;
+    }
+    button { padding: 6px 10px; cursor: pointer; }
+    #status { margin-left: auto; opacity: 0.9; font-size: 14px; }
+    /* IMPORTANTE: sin altura el mapa no se ve */
+    #map { height: calc(100vh - 44px); }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Mapa</strong>
+    <span>consume <code>/recursos</code></span>
+    <button id="btnRecargar">Recargar</button>
+    <span id="status">Listo</span>
+  </header>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
