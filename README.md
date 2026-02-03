@@ -42,17 +42,6 @@ Ejemplo:
 { "id": 1, "lat": -34.6037, "long": -58.3816, "tiempo": "2026-02-02T12:00:00.000Z" }
 ]
 
-Estructura del proyecto
-
-.
-├── src
-│ └── entrypoint.js # Backend (Express)
-├── public
-│ ├── index.html # Frontend
-│ └── app.js # Fetch a /recursos + Leaflet markers
-├── package.json
-└── package-lock.json
-
 Notas
 
 El frontend se sirve desde el mismo backend (carpeta public/)
