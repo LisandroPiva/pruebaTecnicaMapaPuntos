@@ -21,9 +21,6 @@ node src/entrypoint.js
 Opción B: modo desarrollo (recarga automática)
 npm run dev
 
-(Si no existe el script dev, agregalo en package.json:
-"dev": "nodemon src/entrypoint.js")
-
 Endpoints
 
 Frontend (mapa):
@@ -58,6 +55,5 @@ Estructura del proyecto
 
 Notas
 
-El frontend se sirve desde el mismo backend (carpeta public/), por lo que no hay problemas de CORS.
+El frontend se sirve desde el mismo backend (carpeta public/)
 
-Leaflet usa lng, pero en esta consigna la API entrega long. En el frontend se mapea long -> lng al crear los marcadores.
